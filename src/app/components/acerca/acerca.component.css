@@ -1,0 +1,16 @@
+.imagen{
+    width: 70%;
+}
+
+@media(min-width:714px) {
+  
+    .info{
+      padding: 3rem;
+      border-radius: 3rem;
+      
+    }
+    .imagen{
+      width: 400px;
+      border-radius: 1rem;
+    }
+  }

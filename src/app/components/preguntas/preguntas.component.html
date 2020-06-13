@@ -1,0 +1,47 @@
+
+<mat-grid-list [cols]="breakpoint" [rowHeight]="row" (window:resize)="onResize($event)">
+    <mat-grid-tile>
+        <mat-list>
+            <mat-list-item  >
+                <h2 >¿Como puedo realizar un apartado?</h2>
+            </mat-list-item>
+            <mat-list-item   >
+                <p>Por el momento no tenemos forma de </p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item   > 
+                <h2>Pregunta 2</h2>
+            </mat-list-item>
+            <mat-list-item  >
+                <p>Hola, mi pregunta es porque valen verga?</p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item  > 
+                <h2>Pregunta 3</h2>
+            </mat-list-item>
+            <mat-list-item  >
+                <p>Ya se chingó</p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title id="texto">Porque nos interesa tu opinion</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../assets/recepcion.jpg" alt="una reccepcionista linda">
+            <mat-card-content>
+              <p> 
+                    Querido usuario recuerda que estamos aqui para servirte
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>Contactanos</button>
+              
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>

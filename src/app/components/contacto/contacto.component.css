@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+}
+
+@media(min-width:714px) {
+  
+  .info{
+    padding: 3rem;
+    border-radius: 3rem;
+    
+  }
+  .imagen{
+    width: 400px;
+    border-radius: 1rem;
+  }
+}
+
+@media(max-width:714px) {
+  .info{
+    border-radius: 0rem;
+    
+  }
+}
+.info{
+  background: grey;
+
+}

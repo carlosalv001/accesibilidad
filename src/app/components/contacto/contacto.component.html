@@ -1,0 +1,50 @@
+
+<mat-grid-list [cols]="breakpoint" rowHeight="2:1" (window:resize)="onResize($event)">
+    <mat-grid-tile  >  
+        <div class="info">
+            <h3>
+                Contactanos
+            </h3>
+            <p id="texto">
+                Aqui podras encontrar información los trabajadores de nuestro establecimiento junto con un link en el cual te pondrás en contacto con ellos. 
+            </p>
+ 
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile >        
+       <img src="../../../assets/equipo.jpg" alt="" class="imagen">
+    </mat-grid-tile>
+</mat-grid-list>
+
+<!--
+<mat-grid-list cols="1" rowHeight="2:1" (window:resize)="onResize($event)"class="tabla">
+  <mat-grid-tile>-->
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="tabla">
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> nombre </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Apellido </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> Contacto </th>
+        <td mat-cell *matCellDef="let element"><a href="#"><mat-icon aria-label="Side nav toggle icon">account_circle</mat-icon></a> </td>
+      </ng-container>
+    
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+<!--  </mat-grid-tile>
+</mat-grid-list>-->
